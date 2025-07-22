@@ -1,11 +1,13 @@
 const apiKey = "$2a$10$eOsaPW2ljAl3E823gVdkwepHIBVMslBpa4rQE.OVT4R/ZoXUesnKC";
-fetch(`https://api.jsonbin.io/v3/b/6877ff51c7f29633ab29e6a0`, {
+//fetch(`https://api.jsonbin.io/v3/b/6877ff51c7f29633ab29e6a0`, {
+fetch(`src/JSON/productos.json`, {
     headers: { "X-Access-Key": apiKey }
   })
     .then(response => response.json())
     .then(data => {
        // renderConfiguracion(data);
-        renderProductos(data.record);
+        //renderProductos(data.record);
+        renderProductos(data);
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
@@ -52,6 +54,11 @@ function renderProductos(info) {
         item.id = "item_"+producto.titulo;
         h3.classList.add('minititulo');
         item.setAttribute("data-marca", producto.marca);
+        if(producto.marca2 != undefined && producto.marca2 != ""){
+            item.setAttribute("data-marca2", producto.marca2);
+        }else{
+            item.setAttribute("data-marca2", producto.marca);
+        }
         sino1 = false
         sino2= false
         sino3= false
@@ -109,7 +116,7 @@ function renderProductos(info) {
         }
         imagen.style.backgroundImage = `url(${ubicacioncarpeta + (producto?.imagen || "sinfoto.svg")})`;
         imagen.style.backgroundPosition = producto?.posicionimagen || "center";
-        if(producto.marca == "VIANDAS FITNESS"){
+        if(producto.marca == "VIANDAS FITNESS" || producto.marca2 == "VIANDAS FITNESS"){
             imagen.innerHTML += `<h1 id="etiqueta">VIANDA FIT</h1>`;
             imagen.style.border = "solid #40c06f 0.5vh"
         }
@@ -128,10 +135,11 @@ function renderProductos(info) {
                 if (producto.classList.contains("oculto") && producto.style.display === "none") {
                     let titulo = producto.querySelector(".minititulo").textContent.toLowerCase();
                     let marca = producto.getAttribute("data-marca").toLowerCase();
+                    let marca2 = producto.getAttribute("data-marca2").toLowerCase();
                     let filtro = document.getElementById("buscar").value.toLowerCase();
                     let marcaSeleccionada = document.getElementById("marcasbuscar").value.toLowerCase();
 
-                    if ((titulo.includes(filtro) || marca.includes(filtro)) && (marcaSeleccionada === "" || marca === marcaSeleccionada)) {
+                    if ((titulo.includes(filtro) || marca.includes(filtro) || marca2.includes(filtro) ) && (marcaSeleccionada === "" || marca === marcaSeleccionada || marca2 === marcaSeleccionada)) {
                         producto.style.display = "grid";
                         producto.classList.remove("oculto");
                     }
@@ -157,7 +165,8 @@ function actualizarVisibilidadProductos() {
     productos.forEach(producto => {
         let titulo = producto.querySelector(".minititulo").textContent.toLowerCase();
         let marca = producto.getAttribute("data-marca").toLowerCase();
-        if ((titulo.includes(filtro) || marca.includes(filtro)) && (marcaSeleccionada === "" || marca === marcaSeleccionada) ) {
+        let marca2 = producto.getAttribute("data-marca2").toLowerCase();
+        if ((titulo.includes(filtro) || marca.includes(filtro) || marca2.includes(filtro)) && (marcaSeleccionada === "" || marca === marcaSeleccionada || marca2 === marcaSeleccionada) ) {
             a++
             if(a <= limite){
                 producto.style.display = "grid";

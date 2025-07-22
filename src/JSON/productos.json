@@ -1,166 +1,398 @@
 {
-    "configuracion": {
-      "ubicacioncarpeta": "src/PRODUCTOS/"
+  "configuracion": {
+    "ubicacioncarpeta": "src/PRODUCTOS/"
+  },
+  "imagenes": [
+    {
+      "imagen": "pizza.png",
+      "marca2": "",
+      "marca": "PIZZAS",
+      "posicionimagen": "center",
+      "titulo": "Pizza Grande",
+      "adicionales": [
+        "Cebolla",
+        "Tomate",
+        "Jamón",
+        "Huevo"
+      ],
+      "precio": "9000",
+      "precioadicionales": "2000"
     },
-    "imagenes": [
-      {
-        "imagen": "pizza.png",
-        "marca": "PIZZAS",
-        "posicionimagen": "center",
-        "titulo": "Pizza Grande",
-        "adicionales": ["Cebolla", "Tomate", "Jamón", "Huevo"],
-        "precio": "9000"
-      },
-      {
-        "imagen": "sinfoto.svg",
-        "marca": "PIZZAS",
-        "posicionimagen": "center",
-        "titulo": "Pizza Chica",
-        "adicionales": ["Cebolla", "Tomate", "Jamón", "Huevo"],
-        "precio": "6000"
-      },
-      {
-        "imagen": "empanada.png",
-        "marca": "EMPANADAS",
-        "posicionimagen": "center",
-        "titulo": "Empanada",
-        "opciones": ["Carne", "J y Q", "Choclo"],
-
-        "precio": "1800"
-      },
-      {
-        "imagen": "milanesa.webp",
-        "marca": "MILANESAS",
-        "posicionimagen": "center",
-        "titulo": "Milanesa",
-        "opciones": ["Carne", "Pollo", "Soja"],
-
-        "precio": "6000"
-      },
-      {
-        "imagen": "milanapo.png",
-        "marca": "MILANESAS",
-        "posicionimagen": "center",
-        "titulo": "Milanesa A La Napolitana",
-        "opciones": ["Carne", "Pollo", "Soja"],
-        "precio": "7000"
-      },
-      {
-        "imagen": "sandwich.png",
-        "marca": "MILANESAS",
-        "posicionimagen": "center",
-        "titulo": "Sándwich De Milanesa",
-        "opciones": ["Carne", "Pollo", "Soja"],
-        "adicionales": ["Lechuga y Tomate", "Mayonesa", "Huevo frito"],
-        "precio": "7500"
-      },
-      {
-        "imagen": "papasfritas.png",
-        "marca": "GUARNICIONES",
-        "posicionimagen": "center",
-        "titulo": "Guarnición",
-        "opciones": ["Papas Fritas", "Lechuga y Tomate", "Tomate y Huevo", "Papa y Huevo", "Puré de Papa", "Puré de Calabaza","Zanahoria y Tomate"],
-        "precio": "3000"
-      },
-      {
-        "imagen": "ensaladamixta.png",
-        "marca": "ENSALADAS",
-        "posicionimagen": "center",
-        "titulo": "Ensalada Mixta",
-        "precio": "5500"
-      },
-      {
-        "imagen": "ensaladacompleta.png",
-        "marca": "ENSALADAS",
-        "posicionimagen": "center",
-        "titulo": "Ensalada Completa",
-        "precio": "6000"
-      },
-      {
-        "imagen": "sinfoto.svg",
-        "marca": "ENSALADAS",
-        "posicionimagen": "center",
-        "titulo": "Ensalada Papa y Huevo",
-        "precio": "5500"
-      },
-      {
-        "imagen": "ensaladapollo.jpg",
-        "marca": "ENSALADAS",
-        "posicionimagen": "center",
-        "titulo": "Ensalada con Pollo",
-        "precio": "6500"
-      },
-      {
-        "imagen": "sinfoto.svg",
-        "marca": "PAPAS",
-        "posicionimagen": "center",
-        "titulo": "Pastel De Papa",
-        "precio": "6000"
-      },
-      {
-        "imagen": "tortilla.png",
-        "marca": "PAPAS",
-        "posicionimagen": "center",
-        "titulo": "Tortilla Individual",
-        "precio": "5500"
-      },
-      {
-        "imagen": "tarta.png",
-        "marca": "TARTAS",
-        "tamaño":"80%",
-        "posicionimagen": "center",
-        "titulo": "Tarta Individual",
-        "opciones": ["Verdura y Queso", "Jamón y Queso", "Zucchini","Calabaza"],
-
-        "precio": "5000"
-      },
-      {
-        "imagen": "tarta.png",
-        "marca": "TARTAS",
-        "tamaño":"80%",
-        "posicionimagen": "center",
-        "titulo": "Tarta Individual De Pollo con verdeo",
-        "precio": "6000"
-      },
-      {
-        "imagen": "sinfoto.svg",
-        "marca": "HAMBURGUESAS",
-        "posicionimagen": "center",
-        "titulo": "Hamburguesa Gigante",
-        "adicionales": ["Lechuga", "Tomate", "Queso"],
-
-        "precio": "7000"
-      },
-      {
-        "imagen": "sinfoto.svg",
-        "marca": "HAMBURGUESAS",
-        "posicionimagen": "center",
-        "titulo": "Hamburguesa Vegana",
-        "adicionales": ["Lechuga", "Tomate", "Queso"],
-        "precio": "7000"
-      },
-      {
-        "imagen": "pasta.png",
-        "tamaño":"70%",
-
-        "marca": "PASTAS",
-        "posicionimagen": "center",
-        "titulo": "Plato De Pasta",
-        "opciones": ["Espaguetis", "Tirabuzón", "Tallarín","Mostachol"],
-        "adicionales": ["Salsa Fileto", "Salsa Boloñesa", "Crema"],
-        "solouno": true,
-
-        "precio": "6500"
-      },
-      {
-        "imagen": "sinfoto.svg",
-        "marca": "PASTAS",
-        "posicionimagen": "center",
-        "titulo": "Canelones",
-        "adicionales": ["Salsa Fileto", "Salsa Boloñesa", "Crema"],
-        "solouno": true,
-        "precio": "6500"
-      }
-    ]
-  }
-  
+    {
+      "imagen": "sinfoto.svg",
+      "marca2": "",
+      "marca": "PIZZAS",
+      "posicionimagen": "center",
+      "titulo": "Pizza Chica",
+      "adicionales": [
+        "Cebolla",
+        "Tomate",
+        "Jamón",
+        "Huevo"
+      ],
+      "precio": "6000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "empanada.png",
+      "marca2": "",
+      "marca": "EMPANADAS",
+      "posicionimagen": "center",
+      "titulo": "Empanada",
+      "opciones": [
+        "Carne",
+        "J y Q",
+        "Choclo"
+      ],
+      "precio": "1800",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "milanesa.webp",
+      "marca2": "",
+      "marca": "MILANESAS",
+      "posicionimagen": "center",
+      "titulo": "Milanesa",
+      "opciones": [
+        "Carne",
+        "Pollo",
+        "Soja"
+      ],
+      "precio": "6000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "milanapo.png",
+      "marca2": "",
+      "marca": "MILANESAS",
+      "posicionimagen": "center",
+      "titulo": "Milanesa A La Napolitana",
+      "opciones": [
+        "Carne",
+        "Pollo",
+        "Soja"
+      ],
+      "precio": "7000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "sandwich.png",
+      "marca2": "",
+      "marca": "MILANESAS",
+      "posicionimagen": "center",
+      "titulo": "Sándwich De Milanesa",
+      "opciones": [
+        "Carne",
+        "Pollo",
+        "Soja"
+      ],
+      "adicionales": [
+        "Lechuga y Tomate",
+        "Mayonesa",
+        "Huevo frito"
+      ],
+      "precio": "7500",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "papasfritas.png",
+      "marca2": "",
+      "marca": "GUARNICIONES",
+      "posicionimagen": "center",
+      "titulo": "Guarnición",
+      "opciones": [
+        "Papas Fritas",
+        "Lechuga y Tomate",
+        "Tomate y Huevo",
+        "Papa y Huevo",
+        "Puré de Papa",
+        "Puré de Calabaza",
+        "Zanahoria y Tomate"
+      ],
+      "precio": "3000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "ensaladamixta.png",
+      "marca2": "",
+      "marca": "ENSALADAS",
+      "posicionimagen": "center",
+      "titulo": "Ensalada Mixta",
+      "precio": "5500",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "ensaladacompleta.png",
+      "marca2": "",
+      "marca": "ENSALADAS",
+      "posicionimagen": "center",
+      "titulo": "Ensalada Completa",
+      "precio": "6000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "ensaladapapahuevo.webp",
+      "marca2": "",
+      "marca": "ENSALADAS",
+      "posicionimagen": "center",
+      "titulo": "Ensalada Papa y Huevo",
+      "precio": "5500",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "ensaladapollo.jpg",
+      "marca2": "",
+      "marca": "ENSALADAS",
+      "posicionimagen": "center",
+      "titulo": "Ensalada con Pollo",
+      "precio": "6500",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "sinfoto.svg",
+      "marca2": "",
+      "marca": "PAPAS",
+      "posicionimagen": "center",
+      "titulo": "Pastel De Papa",
+      "precio": "6000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "tortilla.png",
+      "marca2": "",
+      "marca": "PAPAS",
+      "posicionimagen": "center",
+      "titulo": "Tortilla Individual",
+      "precio": "5500",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "tarta.png",
+      "marca2": "",
+      "marca": "TARTAS",
+      "tamaño": "80%",
+      "posicionimagen": "center",
+      "titulo": "Tarta Individual",
+      "opciones": [
+        "Verdura y Queso",
+        "Jamón y Queso",
+        "Zucchini",
+        "Calabaza",
+        "champi y brocoli"
+      ],
+      "precio": "5000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "tarta.png",
+      "marca2": "",
+      "marca": "TARTAS",
+      "tamaño": "80%",
+      "posicionimagen": "center",
+      "titulo": "Tarta Individual De Pollo con verdeo",
+      "precio": "6000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "sinfoto.svg",
+      "marca2": "",
+      "marca": "HAMBURGUESAS",
+      "posicionimagen": "center",
+      "titulo": "Hamburguesa Gigante",
+      "adicionales": [
+        "Lechuga",
+        "Tomate",
+        "Queso"
+      ],
+      "precio": "7000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "sinfoto.svg",
+      "marca2": "",
+      "marca": "HAMBURGUESAS",
+      "posicionimagen": "center",
+      "titulo": "Hamburguesa Vegana",
+      "adicionales": [
+        "Lechuga",
+        "Tomate",
+        "Queso"
+      ],
+      "precio": "7000",
+      "precioadicionales": "2000"
+    },
+    {
+      "imagen": "pasta.png",
+      "tamaño": "70%",
+      "marca2": "",
+      "marca": "PASTAS",
+      "posicionimagen": "center",
+      "titulo": "Plato De Pasta",
+      "opciones": [
+        "Espaguetis",
+        "Tirabuzón",
+        "Tallarín",
+        "Mostachol"
+      ],
+      "adicionales": [
+        "Salsa Fileto",
+        "Salsa Boloñesa",
+        "Crema"
+      ],
+      "solouno": true,
+      "precio": "6500",
+      "precioadicionales": "0"
+    },
+    {
+      "imagen": "canelones.png",
+      "marca2": "",
+      "marca": "PASTAS",
+      "posicionimagen": "center",
+      "titulo": "Canelones",
+      "adicionales": [
+        "Salsa Fileto",
+        "Salsa Boloñesa",
+        "Crema"
+      ],
+      "solouno": true,
+      "precio": "6500",
+      "precioadicionales": "0"
+    },
+    {
+      "marca2": "",
+      "marca": "VIANDAS FITNESS",
+      "titulo": "Omelette",
+      "precio": "3500",
+      "imagen": "omelette.png",
+      "posicionimagen": "center",
+      "adicionales": [
+        "Jamón",
+        "queso",
+        "verduras",
+        "cebolla"
+      ],
+      "precioadicionales": [
+        "1000"
+      ],
+      "opciones": [],
+      "solouno": false
+    },
+    {
+      "marca": "VIANDAS FITNESS",
+      "marca2": "TARTAS",
+      "titulo": "Tarta con masa integral de pollo o brócoli",
+      "precio": "6000",
+      "imagen": "tarta.png",
+      "posicionimagen": "center",
+      "adicionales": [],
+      "precioadicionales": [
+        "0"
+      ],
+      "opciones": [
+        "Pollo",
+        "brocoli y champiñones"
+      ],
+      "solouno": false
+    },
+    {
+      "marca": "VIANDAS FITNESS",
+      "marca2": "TARTAS",
+      "titulo": "Tarta con masa integral de verduras",
+      "precio": "5000",
+      "imagen": "tarta.png",
+      "posicionimagen": "center",
+      "adicionales": [],
+      "precioadicionales": [
+        "0"
+      ],
+      "opciones": [
+        "Verdura",
+        "zukini",
+        "calabaza"
+      ],
+      "solouno": false
+    },
+    {
+      "marca2": "",
+      "marca": "VIANDAS FITNESS",
+      "titulo": "Guarniciones Saludables ",
+      "precio": "3500",
+      "imagen": "calabazas.png",
+      "posicionimagen": "center",
+      "adicionales": [
+        "Queso",
+        "huevo",
+        "cebolla"
+      ],
+      "precioadicionales": [
+        "1000"
+      ],
+      "opciones": [
+        "Calabazas al horno",
+        "ensalada mixta",
+        "zanahoria",
+        "tomate"
+      ],
+      "solouno": false
+    },
+    {
+      "marca2": "",
+      "marca": "VIANDAS FITNESS",
+      "titulo": "Risotto de arroz y vegetales",
+      "precio": "6500",
+      "imagen": "risoto.png",
+      "posicionimagen": "center",
+      "adicionales": [],
+      "precioadicionales": [
+        "0"
+      ],
+      "opciones": [
+        "Arroz yamani",
+        "arroz integral"
+      ],
+      "solouno": false
+    },
+    {
+      "marca2": "",
+      "marca": "VIANDAS FITNESS",
+      "titulo": "Pechugas de pollo grille",
+      "precio": "8000",
+      "imagen": "pollogrille.png",
+      "posicionimagen": "center",
+      "adicionales": [],
+      "precioadicionales": [
+        "0"
+      ],
+      "opciones": [],
+      "solouno": false
+    },
+    {
+      "marca2": "",
+      "marca": "VIANDAS FITNESS",
+      "titulo": "Wok de pollo con verduras",
+      "precio": "8000",
+      "imagen": "wokpollo.png",
+      "posicionimagen": "center",
+      "adicionales": [],
+      "precioadicionales": [
+        "0"
+      ],
+      "opciones": [],
+      "solouno": false
+    },
+    {
+      "marca2": "",
+      "marca": "VIANDAS FITNESS",
+      "titulo": "Pata y muslo de pollo al horno",
+      "precio": "7000",
+      "imagen": "sinfoto.svg",
+      "posicionimagen": "center",
+      "adicionales": [],
+      "precioadicionales": [
+        "0"
+      ],
+      "opciones": [],
+      "solouno": false
+    }
+  ]
+}

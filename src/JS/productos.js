@@ -1,13 +1,13 @@
 const apiKey = "$2a$10$eOsaPW2ljAl3E823gVdkwepHIBVMslBpa4rQE.OVT4R/ZoXUesnKC";
-//fetch(`https://api.jsonbin.io/v3/b/6877ff51c7f29633ab29e6a0`, {
-fetch(`src/JSON/productos.json`, {
+fetch(`https://api.jsonbin.io/v3/b/6877ff51c7f29633ab29e6a0`, {
+//fetch(`src/JSON/productos.json`, {
     headers: { "X-Access-Key": apiKey }
   })
     .then(response => response.json())
     .then(data => {
        // renderConfiguracion(data);
-        //renderProductos(data.record);
-        renderProductos(data);
+        renderProductos(data.record);
+       // renderProductos(data);
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);

@@ -113,6 +113,8 @@ function renderProductos(info) {
         if(producto.tamaño != undefined){
         imagen.style.backgroundSize =producto.tamaño;
             
+        }else{
+            imagen.style.backgroundSize = "80%";
         }
         imagen.style.backgroundImage = `url(${ubicacioncarpeta + (producto?.imagen || "sinfoto.svg")})`;
         imagen.style.backgroundPosition = producto?.posicionimagen || "center";

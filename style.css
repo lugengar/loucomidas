@@ -671,11 +671,7 @@ background-image: url();
 .servicio:hover{
     cursor: pointer;
 }
-.servicio .filtro2{
-background-color: #5bf895;
-width: 80%;
 
-}
 .servicio{
    
     overflow: hidden;

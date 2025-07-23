@@ -141,8 +141,10 @@ function carrito(nombre, precio, foto, sino2=false, sino3=false, sino4=false) {
         circulorojo.style.animationPlayState = "running"
         seleccionados = {}
         if(sino3){ 
+          if(document.getElementById('p2_'+nombre).value != ""){ 
             seleccionados = verSeleccionado(document.getElementById('p2_'+nombre).value)
             precio = parseInt(precio) + seleccionados.total;
+           }
         }
         if(sino4){ 
             seleccionados = verSeleccionados(nombre)
@@ -183,6 +185,7 @@ function carrito(nombre, precio, foto, sino2=false, sino3=false, sino4=false) {
         }
         if(sino3){ 
             valor = document.getElementById('p2_'+nombre).value
+            console.log(valor == "")
             if(valor != ""){ 
                 const opciond = document.createElement('p');
                 opciond.className = 'texto, opcionp2';
